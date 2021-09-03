@@ -18,5 +18,6 @@ Here are some ideas to get you started:
 
 
 **Languages**
-
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=nekoimi&hide_border=true&layout=compact&theme=radical)
+<div>
+<img height="130" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nekoimi&hide_border=true&layout=compact&theme=radical" alt="Use Languages Top">
+</div>

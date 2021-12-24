@@ -1,4 +1,4 @@
-**Hey!**
+**Hey!**🤔
 
 <!--
 **nekoimi/nekoimi** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
@@ -19,5 +19,5 @@ Here are some ideas to get you started:
 
 **Languages**
 <div>
-<img height="270" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nekoimi&hide_border=true&layout=compact&theme=radical" alt="Use Languages Top">
+<img height="100" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nekoimi&hide_border=true&layout=compact&theme=radical" alt="Use Languages Top">
 </div>

@@ -15,11 +15,8 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-
-![](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=nekoimi&theme=monokai)
-![](https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=nekoimi&theme=monokai)
-![](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=nekoimi&theme=monokai)
-![](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=nekoimi&theme=monokai)
-![](https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=nekoimi&theme=monokai)
-
-![](https://activity-graph.herokuapp.com/graph?username=nekoimi)
+![](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=nekoimi&theme=radical)
+![](https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=nekoimi&theme=radical)
+![](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=nekoimi&theme=radical)
+![](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=nekoimi&theme=radical)
+![](https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=nekoimi&theme=radical)

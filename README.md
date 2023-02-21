@@ -1,8 +1,5 @@
 **Hey!**🤔
 
-<!--START_SECTION:nekoimi-->
-<!--END_SECTION:nekoimi-->
-
 ![](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=nekoimi&theme=github)
 ![](https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=nekoimi&theme=github)
 ![](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=nekoimi&theme=github)

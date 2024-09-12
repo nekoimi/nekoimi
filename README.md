@@ -30,7 +30,6 @@ Here are some ideas to get you started:
 
 
 <h2 align="center">Hi 👋, I'm nekoimi</h2>
-<p align="center"> <img src="https://komarev.com/ghpvc/?username=nekoimi&label=Profile%20views&color=0e75b6&style=flat" alt="nekoimi" /> </p>
 <p align="center"> <img src="https://github-profile-trophy.vercel.app/?username=nekoimi&rank=-C" alt="nekoimi" /> </p>
 
 <p align="center">
@@ -112,6 +111,10 @@ Here are some ideas to get you started:
 
 ![](./profile-3d-contrib/profile-season-animate.svg)
 
+<br>
 
+<hr>
+
+<p align="center"> <img src="https://komarev.com/ghpvc/?username=nekoimi&label=Profile%20views&color=0e75b6&style=flat" alt="nekoimi" /> </p>
 
 

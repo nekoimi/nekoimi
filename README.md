@@ -32,9 +32,11 @@ Here are some ideas to get you started:
 <h2 align="center">Hi 👋, I'm nekoimi</h2>
 <p align="center"> <img src="https://github-profile-trophy.vercel.app/?username=nekoimi&rank=-C" alt="nekoimi" /> </p>
 
-<p align="center">
+<!-- <p align="center">
   <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=nekoimi&theme=github" />
-</p>
+</p> -->
+
+![](./profile-metrics.svg)
 
 <!--
 [![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=nekoimi&theme=github)](https://github.com/ashutosh00710/github-readme-activity-graph)

@@ -43,16 +43,6 @@ Here are some ideas to get you started:
 
 <br>
 
-- 📫 How to reach me **nekoimime@gmail.com**
-
-<!--
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-</p>
--->
-
-<br>
-
 <h2 align="center">Languages and Tools</h2>
 <p align="center"> 
   <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> 
@@ -93,6 +83,15 @@ Here are some ideas to get you started:
   </a> 
 </p>
 
+<br>
+
+- 📫 How to reach me **nekoimime@gmail.com**
+
+<!--
+<h3 align="left">Connect with me:</h3>
+<p align="left">
+</p>
+-->
 
 <!--
 <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=nekoimi&show_icons=true&locale=en&layout=compact" alt="nekoimi" /></p>

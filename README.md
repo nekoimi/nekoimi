@@ -84,16 +84,6 @@ Here are some ideas to get you started:
   </a> 
 </p>
 
-<br>
-
-- 📫 How to reach me **nekoimime@gmail.com**
-
-<!--
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-</p>
--->
-
 <!--
 <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=nekoimi&show_icons=true&locale=en&layout=compact" alt="nekoimi" /></p>
 
@@ -112,6 +102,16 @@ Here are some ideas to get you started:
 <br>
 
 ![](./profile-3d-contrib/profile-season-animate.svg)
+
+<br>
+
+- 📫 How to reach me **nekoimime@gmail.com**
+
+<!--
+<h3 align="left">Connect with me:</h3>
+<p align="left">
+</p>
+-->
 
 <br>
 

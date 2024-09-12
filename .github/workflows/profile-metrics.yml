@@ -17,6 +17,6 @@ jobs:
           filename: profile-metrics.svg
           token: ${{ secrets.PROFILE_METRICS_TOKEN }}
           plugin_languages: yes
-          plugin_languages_ignored: html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell, gnuplot, vue
+          plugin_languages_ignored: html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell, gnuplot, vue, scss
           config_display: large
           config_order: languages

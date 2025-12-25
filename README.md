@@ -30,7 +30,7 @@ Here are some ideas to get you started:
 
 
 <h2 align="center">Hi 👋, I'm Yang</h2>
-<p align="center"> <img src="https://github-profile-trophy.vercel.app/?username=nekoimi&rank=-C" alt="nekoimi" /> </p>
+<p align="center"> <img src="https://github-profile-trophy.vercel.app/?username=nekoimi&rank=-C" alt="" /> </p>
 
 <!-- <p align="center">
   <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=nekoimi&theme=github" />

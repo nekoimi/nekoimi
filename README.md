@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  I build practical tools and delivery workflows with Go, Python, Linux, and cloud-native stacks.
+  I build practical tools and delivery workflows with Java, Go, Python, Linux, and cloud-native stacks.
 </p>
 
 <p align="center">

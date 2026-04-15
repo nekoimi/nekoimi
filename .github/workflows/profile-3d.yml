@@ -5,6 +5,9 @@ on:
     - cron: "0 19 * * *"
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -15,6 +18,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
+      - name: Optimize SVG outputs
+        run: |
+          npx --yes svgo -f profile-3d-contrib
       - name: Commit & Push
         run: |
           git config user.name github-actions

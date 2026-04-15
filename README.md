@@ -26,7 +26,7 @@
 
 - [`oss-auto-cert`](https://github.com/nekoimi/oss-auto-cert): 阿里云 OSS 证书自动化工具，聚焦证书续期与自动化运维。
 - [`webapp`](https://github.com/nekoimi/webapp): 一个简化前端 Web 项目部署的 Docker 运行环境，实现一次构建、处处部署。
-- [`wxwork-notification-plugin`](https://github.com/nekoimi/wxwork-notification-plugin): 企业微信通知相关的 Jenkins 插件实践与维护。
+- [`wxwork-notification-plugin`](https://github.com/jenkinsci/wxwork-notification-plugin): 企业微信通知相关的 Jenkins 插件实践与维护。
 
 ## Tech Stack
 

@@ -21,6 +21,3 @@ jobs:
           plugin_languages_details: percentage
           config_display: large
           config_order: languages
-          plugin_activity: yes
-          plugin_activity_limit: 5
-          plugin_activity_filter: issue, pr, release, fork, review, ref/create

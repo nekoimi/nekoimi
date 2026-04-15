@@ -24,4 +24,5 @@ jobs:
           plugin_languages_threshold: 2%
           plugin_languages_other: yes
           plugin_languages_details: percentage
+          config_display: large
           config_order: languages

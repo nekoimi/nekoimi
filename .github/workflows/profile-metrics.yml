@@ -22,8 +22,7 @@ jobs:
           plugin_languages_indepth: yes
           plugin_languages_ignored: html, css, less, dockerfile, makefile, shell, vue, scss, m4
           plugin_languages_limit: 12
-          plugin_languages_threshold: 2%
-          plugin_languages_other: yes
+          plugin_languages_threshold: 1%
           plugin_languages_details: percentage
           config_display: large
           config_order: languages

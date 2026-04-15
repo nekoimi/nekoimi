@@ -1,34 +1,3 @@
-<!-- ## Hi there 👋 -->
-
-<!--
-**nekoimi/nekoimi** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
-
-<!--
-<div>
-  <img style="width:49%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=nekoimi&theme=github" />
-  <img style="width:49%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=nekoimi&theme=github" />
-</div>
-
-<div>
-  <img style="width:49%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=nekoimi&theme=github" />
-  <img style="width:49%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=nekoimi&theme=github&utcOffset=8" />
-</div>
--->
-
-
-
 <h2 align="center">Hi 👋, I'm Yang</h2>
 <p align="center"> <img src="https://github-profile-trophy.vercel.app/?username=nekoimi&rank=-C" alt="" /> </p>
 
@@ -37,10 +6,6 @@ Here are some ideas to get you started:
 </p> -->
 
 ![](./profile-metrics.svg)
-
-<!--
-[![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=nekoimi&theme=github)](https://github.com/ashutosh00710/github-readme-activity-graph)
--->
 
 <br>
 
@@ -98,21 +63,6 @@ Here are some ideas to get you started:
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> 
   </a> 
 </p>
-
-<!--
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=nekoimi&show_icons=true&locale=en&layout=compact" alt="nekoimi" /></p>
-
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=nekoimi&show_icons=true&locale=en" alt="nekoimi" /></p>
-
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=nekoimi&" alt="nekoimi" /></p>
--->
-
-<!--
-<p>
-  <img style="width:59%;" src="https://github-readme-stats.vercel.app/api?username=nekoimi&show_icons=true&include_all_commits=true&theme=github" />
-  <img style="width:39%;" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nekoimi&layout=compact&theme=github&langs_count=8&hide=html,css,c" />
-</p>
--->
 
 <br>
 

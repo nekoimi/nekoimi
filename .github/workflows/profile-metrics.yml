@@ -49,15 +49,31 @@ jobs:
               core.setFailed('Repository count is nonzero but no repositories were returned. Check PAT repository access and organization SSO authorization.');
             }
             if (repositories.totalCount > 100) {
-              core.warning('More than 100 owned non-fork repositories are visible. Metrics v3.34 has a pagination limitation; this configuration cannot include all of them.');
+              core.warning('More than 100 owned non-fork repositories are visible. Increase the Metrics repositories limit to include all of them.');
             }
             if (fetched.some(repo => repo.languages.totalCount > 8)) {
               core.warning('Metrics reads only the first 8 languages of each repository; smaller languages in those repositories may be omitted.');
             }
 
-      - name: Generate profile metrics
-        uses: lowlighter/metrics@latest
+      - uses: actions/checkout@v7
         with:
+          persist-credentials: false
+
+      - name: Check out Metrics source
+        uses: actions/checkout@v7
+        with:
+          repository: lowlighter/metrics
+          ref: 65836723097537a54cd8eb90f61839426b4266b6 # v3.34.0 / latest
+          path: .metrics-action
+          persist-credentials: false
+
+      - name: Fix Metrics repository retry and pagination
+        run: node .github/scripts/patch-metrics.mjs .metrics-action
+
+      - name: Generate profile metrics
+        uses: ./.metrics-action
+        with:
+          use_prebuilt_image: no
           user: ${{ github.repository_owner }}
           config_timezone: Asia/Shanghai
           filename: profile-metrics.svg
@@ -66,7 +82,7 @@ jobs:
           token: ${{ secrets.PROFILE_METRICS_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           repositories: 100
-          repositories_batch: 100
+          repositories_batch: 25
           repositories_affiliations: owner
           repositories_forks: no
           optimize: css, xml

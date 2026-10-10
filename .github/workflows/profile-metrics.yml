@@ -11,20 +11,76 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: lowlighter/metrics@latest
+      - name: Check metrics token and repository access
+        uses: actions/github-script@v8
+        env:
+          METRICS_TOKEN: ${{ secrets.PROFILE_METRICS_TOKEN }}
         with:
+          github-token: ${{ secrets.PROFILE_METRICS_TOKEN || github.token }}
+          script: |
+            if (!process.env.METRICS_TOKEN) {
+              core.setFailed('PROFILE_METRICS_TOKEN is missing. Configure a personal access token in repository Actions secrets.');
+              return;
+            }
+
+            const login = context.repo.owner;
+            const result = await github.graphql(`
+              query($login: String!) {
+                viewer { login }
+                user(login: $login) {
+                  repositories(first: 100, isFork: false, ownerAffiliations: [OWNER],
+                    affiliations: [OWNER], orderBy: {field: UPDATED_AT, direction: DESC}) {
+                    totalCount
+                    nodes { isPrivate languages(first: 8) { totalCount } }
+                  }
+                }
+              }
+            `, { login });
+
+            if (result.viewer.login.toLowerCase() !== login.toLowerCase()) {
+              core.setFailed('PROFILE_METRICS_TOKEN must belong to the profile owner so private repositories can be included.');
+              return;
+            }
+
+            const repositories = result.user.repositories;
+            const fetched = repositories.nodes.filter(Boolean);
+            core.info(`Owned non-fork repositories: ${repositories.totalCount}; fetched: ${fetched.length}; private in fetched batch: ${fetched.filter(repo => repo.isPrivate).length}`);
+            if (repositories.totalCount > 0 && fetched.length === 0) {
+              core.setFailed('Repository count is nonzero but no repositories were returned. Check PAT repository access and organization SSO authorization.');
+            }
+            if (repositories.totalCount > 100) {
+              core.warning('More than 100 owned non-fork repositories are visible. Metrics v3.34 has a pagination limitation; this configuration cannot include all of them.');
+            }
+            if (fetched.some(repo => repo.languages.totalCount > 8)) {
+              core.warning('Metrics reads only the first 8 languages of each repository; smaller languages in those repositories may be omitted.');
+            }
+
+      - name: Generate profile metrics
+        uses: lowlighter/metrics@latest
+        with:
+          user: ${{ github.repository_owner }}
           config_timezone: Asia/Shanghai
           filename: profile-metrics.svg
+          # PAT 用于读取其他仓库；写入当前仓库使用工作流自己的令牌。
+          # 私有仓库需要 PAT 授权读取，组织仓库还可能需要 SSO 授权。
           token: ${{ secrets.PROFILE_METRICS_TOKEN }}
-          optimize: yes
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          repositories: 100
+          repositories_batch: 100
+          repositories_affiliations: owner
+          repositories_forks: no
+          optimize: css, xml
           config_animations: no
           plugin_languages: yes
-          plugin_languages_indepth: yes
-          plugin_languages_ignored: html, css, less, dockerfile, makefile, shell, vue, scss, m4
-          plugin_languages_limit: 12
+          # 直接汇总仓库语言数据，避免按提交作者匹配、克隆失败造成漏统计。
+          plugin_languages_indepth: no
+          plugin_languages_ignored: html, css, less, scss
+          # 0 表示不限制显示数量；正数最多只能设为 8。
+          plugin_languages_limit: 0
           plugin_languages_threshold: 0%
+          plugin_languages_other: yes
           plugin_languages_details: percentage
           config_display: large
           config_order: languages
-          # 可选但推荐添加，防止 clone 超时或太慢
-          plugin_languages_analysis_timeout: 60
+          plugins_errors_fatal: yes
+          debug: yes

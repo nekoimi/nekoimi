@@ -90,11 +90,18 @@ jobs:
           plugin_languages: yes
           # 直接汇总仓库语言数据，避免按提交作者匹配、克隆失败造成漏统计。
           plugin_languages_indepth: no
-          plugin_languages_ignored: html, css, less, scss
+          # 过滤样式、模板、构建描述和数据格式；保留 Vue、Shell、Dockerfile 等。
+          plugin_languages_ignored: >-
+            html, css, less, scss, sass, stylus,
+            astro, freemarker, smarty, go template,
+            cmake, makefile, m4,
+            json, yaml, xml, toml, ini, markdown, text, csv, svg, plpgsql
           # 0 表示不限制显示数量；正数最多只能设为 8。
           plugin_languages_limit: 0
-          plugin_languages_threshold: 0%
-          plugin_languages_other: yes
+          # 隐藏原始代码量占比不超过 0.1% 的语言，避免显示接近 0% 的项目。
+          plugin_languages_threshold: 0.1%
+          # 不把被过滤的内容汇总成 Other；占比按剩余可见语言重新计算。
+          plugin_languages_other: no
           plugin_languages_details: percentage
           config_display: large
           config_order: languages

@@ -12,7 +12,7 @@ jobs:
       contents: write
     steps:
       - name: Check metrics token and repository access
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         env:
           METRICS_TOKEN: ${{ secrets.PROFILE_METRICS_TOKEN }}
         with:
